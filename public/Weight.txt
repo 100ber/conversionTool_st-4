@@ -1,0 +1,24 @@
+<select class="form-select sel" id="selunit2" >
+<option value="kg" selected>Kilograms(kg)</option>
+          <option value="lb" >Pounds(lb)</option>
+        </select>
+        &nbsp;
+        <br>
+        <input type="number" class="sel" id="in"></input>
+
+        <br></br>
+        
+        <h2>To</h2>
+
+        <br>
+        <select class="form-select sel" id="selunit3" >
+          <option value="kg" >Kilograms(kg)</option>
+          <option value="lb" selected>Pounds(lb)</option>
+          
+        </select>
+
+        <br>
+        <button class="btn btn-primary" onclick="convertw()">Convert</button>
+<br></br>
+
+<h1 id="res"></h1>

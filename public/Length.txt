@@ -1,0 +1,27 @@
+<select class="form-select sel" id="selunit2" >
+          <option value="3" selected>Meter(m)</option>
+          <option value="5">Centimeter(cm)</option>
+          <option value="6">Millimeter(mm)</option>
+          <option value="0">Kilometer(km)</option>
+        </select>
+        &nbsp;
+        <br>
+        <input type="number" class="sel" id="in"></input>
+
+        <br>
+        <br>
+        <h2>To</h2>
+
+        <br>
+        <select class="form-select sel" id="selunit3" >
+          <option value="3" >Meter(m)</option>
+          <option value="5" name="cm" selected>Centimeter(cm)</option>
+          <option value="6">Millimeter(mm)</option>
+          <option value="0" >Kilometer(km)</option>
+        </select>
+
+        <br>
+        <button class="btn btn-primary" onclick="convertl()">Convert</button>
+<br></br>
+        
+        <h1 id="res"></h1>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <meta charset="utf-8" />
+    <link href="http://fonts.cdnfonts.com/css/facon" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <style>
+
+.heads{
+    height: 15vh;
+    font-size: larger;
+  }
+
+  .row{
+        --bs-gutter-x : 0;
+        height: 85vh;
+      }
+
+      .sel{
+        width:50vh;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+      }
+
+      .lside{
+        background-image: linear-gradient(to bottom,black,grey);
+        color: white;
+        justify-content: center;
+        align-items: center;
+        font-family: facon;
+      }
+
+  @import url('http://fonts.cdnfonts.com/css/facon');
+#logo{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 7vh;
+  color: white;
+  padding-left: 3%;
+}
+
+.nav-item:hover>.dropdown-menu {
+    display: block;
+  }
+
+  .nav-item {
+    padding: 0vh 4vh;
+    }
+
+    .nav-item >a{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+         
+        .lin{
+          color: white;
+          text-decoration: none;
+        }
+
+.lin:hover{
+        color:red;
+    }
+     
+    #logo2{
+      font-family: facon;
+      font-size: 7vh;
+     
+    }
+
+    a{
+      cursor: pointer;
+    }
+
+    .animation{
+        /* height: 15vh;
+        width: 100%; */
+        /* animation-name: first;
+        animation-duration: 3s ;
+        transition-timing-function:linear; */
+        background-image: linear-gradient(to right,rgb(212, 0, 255),black);
+        /* margin-left: 5%;  */
+       
+    }
+
+    .sel2{
+      margin: 0vh 1vh;
+      width: 20vh;
+      height: 7vh;
+    }
+
+    .nr{
+      background-image:linear-gradient(to bottom,purple,blueviolet);
+      color:white;
+    }
+
+    </style>
+  </body>
+  <script>
+function convertt(){
+        var a=document.getElementById("selunit2").value;
+        var b=document.getElementById("selunit3").value;
+        var c=document.getElementById("in").value;
+        var r=document.getElementById("res");
+        var C;
+        if(a!=b && a=='F'){
+C=(5/9)*(c-32);
+        }
+        if(a!=b && a=='C'){
+            C=(9*c+(160))/5;
+        }
+        if(a===b){
+C=c;
+        }
+        r.innerHTML="Result : ";
+        r.innerHTML+=C;
+        r.innerHTML+="° ";
+        r.innerHTML+=b;
+    }
+
+
+    function convertl(){
+        var a=document.getElementById("selunit2").value;
+    var b=document.getElementById("selunit3").value;
+    var c=document.getElementById("in").value;
+    var r=document.getElementById("res");
+    var d=b-a;
+    d=Math.pow(10,d);
+    c=d*c;
+    r.innerHTML="Result : "
+    r.innerHTML+=c;
+    }
+
+
+    function convertw(){
+        var a=document.getElementById("selunit2").value;
+        var b=document.getElementById("selunit3").value;
+        var c=document.getElementById("in").value;
+        var r=document.getElementById("res");
+        var C;
+        if(a!=b && a=='kg'){
+C=c*2.2;
+        }
+        if(a!=b && a=='lb'){
+            C=(c/2.2);
+        }
+        if(a===b){
+C=c;
+        }
+        r.innerHTML="Result : ";
+        r.innerHTML+=C;
+        r.innerHTML+=" ";
+        r.innerHTML+=b;
+    }
+
+    function chang(){
+      var a=document.getElementById("selunit2").value;
+    var r=document.getElementById("r3");
+var c=a+".txt";
+axios.get(c)
+    .then(res => {
+      var p = res.data;
+      console.log(p);
+      r.innerHTML=p;
+    })
+    .catch(error => console.log(error));
+    }
+
+    function typ(C){
+        var d;
+        if(C<=18.4){
+            d=" (Underweight)";
+        }
+        else if(C>=18.5 && C<=24.9){
+            d=" (Normal)";
+        }
+        else if(C>=25){
+            d=" (Overweight)";
+        }
+        else if(C>=40){
+            d=" (Obese)";
+        }
+        return d;
+    }
+
+    function calkg(){
+        var a=document.getElementById("in").value;
+        var c=document.getElementById("in3").value;
+        var r=document.getElementById("res");
+        var C;
+        C=a/100;
+        C=C*C;
+        C=c/C;
+        C=C.toFixed(2);
+        
+        var d=typ(C);
+        
+        r.innerHTML="Result : ";
+        r.innerHTML+=C;
+
+        r.innerHTML+=d;
+    }
+
+
+    function callb(){
+        var a=document.getElementById("in").value;
+        var b=document.getElementById("in2").value;
+        var c=document.getElementById("in3").value;
+        var r=document.getElementById("res");
+        var C;
+        C=(a*12);
+        C+=parseInt(b);
+        C=C*C;
+        C=c/C;
+        C=C*703;
+        C=C.toFixed(2);
+        
+        var d=typ(C);
+        
+        r.innerHTML="Result : ";
+        r.innerHTML+=C;
+
+        r.innerHTML+=d;
+    }
+
+
+    function ch(){
+
+    
+var a=document.getElementById("selunit").value;
+var b=document.getElementById("un");
+var r=document.getElementById("r2");
+b.innerHTML=a;
+var c=a+".txt";
+axios.get(c)
+.then(res => {
+  var p = res.data;
+  console.log(p);
+  r.innerHTML=p;
+})
+.catch(error => console.log(error));
+};
+
+
+
+  </script>
+</html>

@@ -1,0 +1,63 @@
+ <div class="row" align="center">
+<div class="col-lg-6 lside">
+    <br></br>
+    <br></br>
+    <br></br>
+   
+<h1>CONVERT ANY UNIT</h1>
+<br></br>
+    <br>
+   
+<select class="form-select sel" id="selunit" onchange="ch()" >
+          <option value="Length" selected>Length</option>
+          <option value="Temperature">Temperature</option>
+          <option value="Weight">Weight</option>
+          <option value="BMI">BMI</option>
+        </select>
+</div>
+
+<div class="col-lg-6"><br></br>
+<h1 id="un">Length</h1>
+<br>
+<div id="r2">
+<select class="form-select sel" id="selunit2" >
+          <option value="3" selected>Meter(m)</option>
+          <option value="5">Centimeter(cm)</option>
+          <option value="6">Millimeter(mm)</option>
+          <option value="0">Kilometer(km)</option>
+        </select>
+        &nbsp;
+        <br>
+        <input type="number" class="sel" id="in"></input>
+
+        <br></br>
+        
+        <h2>To</h2>
+
+        <br>
+        <select class="form-select sel" id="selunit3" >
+          <option value="3" >Meter(m)</option>
+          <option value="5" name="cm" selected>Centimeter(cm)</option>
+          <option value="6">Millimeter(mm)</option>
+          <option value="0" >Kilometer(km)</option>
+        </select>
+
+        <br>
+        <button class="btn btn-primary" onClick={convertl}>Convert</button>
+<br></br>
+
+<h1 id="res"></h1>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+    </div>

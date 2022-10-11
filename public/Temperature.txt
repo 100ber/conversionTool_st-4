@@ -1,0 +1,25 @@
+
+<select class="form-select sel" id="selunit2" >
+          <option value="C" selected>Celcius(C)</option>
+          <option value="F">Fahrenheit(F)</option>
+         
+        </select>
+        &nbsp;
+        <br>
+        <input type="number" class="sel" id="in"></input>
+
+        <br></br>
+       
+        <h2>To</h2>
+
+        <br>
+        <select class="form-select sel" id="selunit3" >
+        <option value="C" >Celcius(C)</option>
+          <option value="F" selected>Fahrenheit(F)</option>
+        </select>
+
+        <br>
+        <button class="btn btn-primary" onclick="convertt()">Convert</button>
+<br></br>
+        
+        <h1 id="res"></h1>

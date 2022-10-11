@@ -1,0 +1,23 @@
+<select class="form-select sel" id="selunit2" onchange="chang()">
+<option value="st" >Standard</option>
+          <option value="mt" selected  >Metric</option>
+        </select>
+        &nbsp;
+        <br>
+        <div id="r3">
+        <label for="in">Height(in cm) : </label><input type="number" class="sel2" id="in" placeholder='cm'></input>
+
+        <br></br>
+      
+        
+        <label for="in">Weight(in kg) : </label><input type="number" class="sel2" id="in3" placeholder='kg'></input>
+
+        <br></br>
+        
+
+     
+        <button class="btn btn-primary" onclick="calkg()">Calculate</button>
+        </div>
+<br></br>
+
+<h1 id="res"></h1>

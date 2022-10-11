@@ -1,0 +1,12 @@
+        <label for="in">Height(in ft) : </label><input type="number" class="sel2" id="in" placeholder='feet'></input><input type="number" class="sel2" id="in2" placeholder='inches'></input>
+
+        <br>
+        <br>
+        
+        <label for="in">Weight(in lb) : </label><input type="number" class="sel2" id="in3" placeholder='eg : 88 lb'></input>
+
+        <br>
+        
+
+        <br>
+        <button class="btn btn-primary" onclick="callb()">Calculate</button>
