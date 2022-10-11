@@ -1,6 +1,5 @@
 # conversionTool_st-4
 
-![Screenshot (1014)](https://user-images.githubusercontent.com/76042199/195094035-9d13a44b-3115-47c3-bab1-cc95d6961f7a.png)
 ![Screenshot (1015)](https://user-images.githubusercontent.com/76042199/195094059-12e56ea9-74d5-4431-a9a8-7ca06ed8a016.png)
 ![Screenshot (1016)](https://user-images.githubusercontent.com/76042199/195094073-97d89f9e-10da-45f6-987d-c37ba829eb7c.png)
 ![Screenshot (1017)](https://user-images.githubusercontent.com/76042199/195094084-f8b3b663-eb78-424d-b50d-ffca9253945f.png)
